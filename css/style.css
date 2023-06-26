@@ -1,0 +1,138 @@
+/* reseteo los estilos */
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* estilo del cuerpo de la pagina */
+body {
+  background: linear-gradient(to top, lime, 20%, cyan);
+}
+
+.cuerpocontenedor {
+  margin: 50px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.anillo {
+  width: 280px;
+  border: 10px solid #000;
+  border-radius: 9999px;
+}
+
+.profesionales {
+  font-size: 24px;
+  line-height: 25px;
+  width: 280px;
+  letter-spacing: 2px;
+  background-color: rgb(252 211 77);
+  border-radius: 9999px;
+  text-align: center;
+}
+.pacientes {
+  font-size: 24px;
+  line-height: 25px;
+  width: 280px;
+  letter-spacing: 2px;
+  background-color: rgb(252 211 77);
+  border-radius: 9999px;
+  text-align: center;
+}
+.administracion {
+  font-size: 24px;
+  line-height: 25px;
+  width: 280px;
+  letter-spacing: 2px;
+  background-color: rgb(252 211 77);
+  border-radius: 9999px;
+  text-align: center;
+}
+
+.texto {
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.turnos {
+  margin: 50px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 40px;
+}
+
+/*estilo de la cabecera de la pagina */
+header {
+  background: radial-gradient(rgba(255, 0, 98, 0.514), blue);
+  padding: 10px;
+  width: 100%;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.imagenhospital {
+  margin-right: 20px;
+}
+.logo {
+  width: 50px;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list li {
+  margin-right: 50px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor: grab;
+}
+.nav-list li a:hover {
+  color: red;
+}
+
+/* estilo del pie de la pagina */
+footer {
+  background: radial-gradient(rgba(0, 119, 255, 0.514), black);
+  padding: 20px;
+  width: 100%;
+}
+.footer-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* estilo que cambia segun el tamaño de pantalla */
+@media screen and (max-width: 800px) {
+  .header-nav {
+    flex-wrap: wrap;
+  }
+  .nav-list {
+    flex-wrap: wrap;
+  }
+  .cuerpocontenedor {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
